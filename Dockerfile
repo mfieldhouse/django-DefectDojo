@@ -5,8 +5,8 @@ MAINTAINER Matt Tesauro <matt.tesauro@owasp.org>
 
 ADD . /opt/django-DefectDojo
 
-RUN apt update \
-    && DEBIAN_FRONTEND=noninteractive apt install -y mysql-server sudo git expect wget \
+RUN apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server sudo git expect wget \
     && usermod -d /var/lib/mysql/ mysql \
     && service mysql start \
     && cd /opt \
