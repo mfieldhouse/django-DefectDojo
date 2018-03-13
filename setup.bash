@@ -313,3 +313,5 @@ echo "When you're ready to start the DefectDojo server, type in this directory:"
 echo
 echo "    python manage.py runserver"
 echo
+
+echo "ALLOWED_HOSTS = ['*']" >> dojo/settings/settings.py
